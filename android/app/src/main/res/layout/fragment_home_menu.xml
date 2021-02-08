@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_all_8dp"
+        android:text="Menu"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_all_32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/margin_all_8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ImageView
+            android:id="@+id/image_avatar"
+            android:layout_width="@dimen/size_ava_dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_nameAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_all_8dp"
+            android:text="Nguyễn Văn Sơn"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_all_24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/image_avatar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_all_8dp"
+            android:layout_marginBottom="@dimen/margin_all_8dp"
+            android:text="Xem trang cá nhân"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/text_nameAccount"
+            app:layout_constraintTop_toBottomOf="@+id/text_nameAccount" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_edit_profile"
+        style="@style/constraint_menu"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint_profile">
+
+        <ImageView
+            android:id="@+id/button_date"
+            android:layout_width="@dimen/size_all_30dp"
+            android:layout_height="@dimen/size_all_30dp"
+            android:layout_margin="@dimen/margin_all_8dp"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView16"
+            style="@style/text_menu"
+            android:text="Chỉnh sửa trang cá nhân"
+            app:layout_constraintBottom_toBottomOf="@+id/button_date"
+            app:layout_constraintStart_toEndOf="@+id/button_date"
+            app:layout_constraintTop_toTopOf="@+id/button_date" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_saved"
+        style="@style/constraint_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint_edit_profile">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="@dimen/size_all_30dp"
+            android:layout_height="@dimen/size_all_30dp"
+            android:layout_margin="@dimen/margin_all_8dp"
+            android:src="@drawable/ic_saved"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/text_menu"
+            android:text="Mục đã lưu"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_active_log"
+        style="@style/constraint_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint_saved">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="@dimen/size_all_30dp"
+            android:layout_height="@dimen/size_all_30dp"
+            android:layout_margin="@dimen/margin_all_8dp"
+            android:src="@drawable/ic_active_log"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView19"
+            style="@style/text_menu"
+            android:text="Nhật ký hoạt động"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_change_password"
+        style="@style/constraint_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint_active_log">
+
+        <ImageView
+            android:id="@+id/image_change_password"
+            android:layout_width="@dimen/size_all_30dp"
+            android:layout_height="@dimen/size_all_30dp"
+            android:layout_margin="@dimen/margin_all_8dp"
+            android:src="@drawable/ic_change_password"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/text_menu"
+            android:text="Đổi mật khẩu"
+            app:layout_constraintBottom_toBottomOf="@+id/image_change_password"
+            app:layout_constraintStart_toEndOf="@+id/image_change_password"
+            app:layout_constraintTop_toTopOf="@+id/image_change_password" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_logout"
+        android:layout_width="0dp"
+        style="@style/constraint_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint_change_password">
+
+        <ImageView
+            android:id="@+id/image_logout"
+            android:layout_width="@dimen/size_all_30dp"
+            android:layout_height="@dimen/size_all_30dp"
+            android:layout_margin="@dimen/margin_all_8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_logout" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/text_menu"
+            android:text="Đăng xuất"
+            app:layout_constraintBottom_toBottomOf="@+id/image_logout"
+            app:layout_constraintStart_toEndOf="@+id/image_logout"
+            app:layout_constraintTop_toTopOf="@+id/image_logout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

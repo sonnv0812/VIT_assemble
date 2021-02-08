@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">VIT</string>
+
+    <string name="suggest_item_name">Tham gia các chiến dịch Tình nguyện Xuân yêu thương - Mùa hè xanh 2020 - SoICT</string>
+    <string name="suggest_item_status">Đang đăng ký</string>
+    <string name="suggest_item_day">Thứ 7</string>
+    <string name="suggest_item_date">1</string>
+    <string name="suggest_time">20:20 01/07/2021</string>
+
+    <string name="participated_status">Đã tham gia</string>
+    <string name="registered_status">Đã đăng ký</string>
+    <string name="unregistered_status">Chưa đăng ký</string>
+    <string name="not_registered_status">Không đăng ký</string>
+
+    <string name="old_password">Mật khẩu cũ</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="confirm_password">Xác nhận mật khẩu mới</string>
+
+    <string name="profile_full_name_title">Họ tên</string>
+    <string name="profile_gender_title">Giới tính</string>
+    <string name="profile_birthday_title">Sinh nhật</string>
+    <string name="profile_email_title">Email</string>
+    <string name="profile_phone_title">Số điện thoại</string>
+    <string name="profile_university_title">Trường</string>
+    <string name="profile_school_title">Viện</string>
+</resources>
