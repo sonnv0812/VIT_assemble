@@ -1,4 +1,4 @@
-package com.example.vit.data.base;
+package com.example.vit.config;
 
 public interface UserType {
     int ADMIN = 1;

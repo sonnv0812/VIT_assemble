@@ -1,10 +1,7 @@
 package com.example.vit.ui.main.home;
 
-import android.content.Intent;
-
 import com.example.vit.R;
-import com.example.vit.data.base.HomeActive;
-import com.example.vit.data.base.UserType;
+import com.example.vit.config.UserType;
 import com.example.vit.data.model.ItemCardHome;
 
 import java.util.ArrayList;

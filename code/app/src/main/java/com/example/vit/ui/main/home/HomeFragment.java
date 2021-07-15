@@ -2,7 +2,6 @@ package com.example.vit.ui.main.home;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,10 +12,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vit.R;
-import com.example.vit.data.base.HomeActive;
+import com.example.vit.config.HomeActive;
 import com.example.vit.data.model.ItemCardHome;
 import com.example.vit.listener.OnItemClickListener;
-import com.example.vit.ui.active.add.AddActiveActivity;
+import com.example.vit.ui.active.add.AddActivity;
 import com.example.vit.ui.active.list.activity.ListActiveActivity;
 
 import java.util.List;
@@ -42,7 +41,7 @@ public class HomeFragment extends Fragment implements HomeContract.View {
             public void onClick(ItemCardHome itemCardHome, int position) {
                 switch (position) {
                     case HomeActive.ADD:
-                        Intent intent = new Intent(getContext(), AddActiveActivity.class);
+                        Intent intent = new Intent(getContext(), AddActivity.class);
                         startActivity(intent);
                         break;
                     case HomeActive.INFO:

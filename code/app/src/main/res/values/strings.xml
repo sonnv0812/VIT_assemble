@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">VIT</string>
+
+    <string name="suggest_item_name">Tham gia các chiến dịch Tình nguyện Xuân yêu thương - Mùa hè xanh 2020 - SoICT</string>
+    <string name="suggest_item_status">Đang đăng ký</string>
+    <string name="suggest_item_day">Thứ 7</string>
+    <string name="suggest_item_date">1</string>
+    <string name="suggest_time">20:20 01/07/2021</string>
+
+    <string name="participated_status">Đã tham gia</string>
+    <string name="registered_status">Đã đăng ký</string>
+    <string name="unregistered_status">Chưa đăng ký</string>
+    <string name="not_registered_status">Không đăng ký</string>
 </resources>

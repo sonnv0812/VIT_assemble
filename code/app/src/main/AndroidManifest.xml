@@ -18,10 +18,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.login.LoginActivity" />
-        <activity android:name=".ui.active.add.AddActiveActivity" />
+        <activity android:name=".ui.active.add.AddActivity" />
         <activity android:name=".ui.active.list.activity.ListActiveActivity" />
-        <activity android:name=".ui.active.info.InfoActiveActivity" />
-        <activity android:name=".ui.active.confirm.ConfirmActiveActivity" />
+        <activity android:name=".ui.active.info.InformationActivity" />
+        <activity android:name=".ui.active.confirm.ConfirmActivity" />
     </application>
 
 </manifest>

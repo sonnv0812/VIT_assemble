@@ -7,8 +7,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.example.vit.config.FragmentListActive;
-import com.example.vit.ui.active.list.all.AllActiveFragment;
-import com.example.vit.ui.active.list.registered.RegisteredActiveFragment;
+import com.example.vit.ui.active.list.upcoming.UpcomingFragment;
+import com.example.vit.ui.active.list.registered.RegisteredFragment;
 
 public class ListActivePagerAdapter extends FragmentStatePagerAdapter {
 
@@ -22,10 +22,10 @@ public class ListActivePagerAdapter extends FragmentStatePagerAdapter {
         Fragment fragment = null;
         switch (position) {
             case FragmentListActive.ALL:
-                fragment = new AllActiveFragment();
+                fragment = new UpcomingFragment();
                 break;
             case FragmentListActive.REGISTERED:
-                fragment = new RegisteredActiveFragment();
+                fragment = new RegisteredFragment();
                 break;
         }
         return fragment;
